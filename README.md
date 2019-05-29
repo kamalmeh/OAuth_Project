@@ -1,2 +1,2 @@
 # OAuth_Project
-Can be used for any OAuth System
+This project gives a common framework which can be used for any OAuth supporting organization for Authentication purpose.
