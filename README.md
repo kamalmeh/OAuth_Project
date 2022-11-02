@@ -1,8 +1,9 @@
-# OAuth_Project
-This project gives a common framework which can be used for any OAuth supporting organization for Authentication purpose.
+# OAuth Framework in Perl
+This project is developed for fun to facilitate the OAuth Mechanism to be used easily.
+It's a framework.
 
-# OAuth Example
-
+# Synopsis
+```
 my $OAuthReq=OAuth->new({
 	"METHOD"=>"POST",
         "AUTH_URL"=>$AuthURL,
@@ -21,5 +22,4 @@ $OAuthReq->setToken($tokenData);
 $OAuthReq->addHeader({"Content-Type"=>"application/json;charset=UTF-8","Authorization"=>"$tokenData->{token_type} $tokenData->{access_token}"});
 $OAuthReq->setMethod("GET");
 $OAuthReq->getData($DataURL);
-
-
+```
